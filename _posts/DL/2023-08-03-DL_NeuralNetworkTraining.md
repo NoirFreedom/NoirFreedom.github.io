@@ -50,15 +50,3 @@ tags: [dl]
 <img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining17.png" alt="" width="800">
 
 <img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining18.png" alt="" width="800">
-
-<img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining19.png" alt="" width="800">
-
-<img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining20.png" alt="" width="800">
-
-<img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining21.png" alt="" width="800">
-
-<img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining22.png" alt="" width="800">
-
-<img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining23.png" alt="" width="800">
-
-<img src="/assets/img/DL_NeuralNetworkTraining/dl_neuralnetworkTraining24.png" alt="" width="800">
