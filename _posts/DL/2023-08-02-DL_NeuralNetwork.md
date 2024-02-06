@@ -69,6 +69,3 @@ tags: [dl]
 
 <img src="/assets/img/DL_NeuralNetwork/dl_neuralnetwork29.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neuralnetwork30.png" alt="" width="800">
-
-
