@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: NoirFreedom's Archive # the main title # the main title
 
-tagline: 더 발전할 저 자신을 상상하고, 그것을 달성하기 위해 계속해서 나아갑니다. # it will display as the sub-title
+tagline: 더 발전할 제 자신을 상상하고, 그것을 달성하기 위해 꾸준히 나아가고자 합니다. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
     NoirFreedom's Code Archive
@@ -38,7 +38,7 @@ social:
   email: noirfreedom.xxx@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    - https://twitter.com/NoirFreedomX # change to your twitter homepage
     - https://github.com/NoirFreedom # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
