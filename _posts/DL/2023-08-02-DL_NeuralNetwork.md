@@ -14,64 +14,64 @@ tags: [dl]
 
 # **Neural Network**
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork1.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork1.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork2.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork2.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork3.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork3.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork4.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork4.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork5.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork5.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork6.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork6.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork7.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork7.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork8.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork8.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork9.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork9.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork10.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork10.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork11.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork11.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork12.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork12.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork13.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork13.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork14.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork14.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork15.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork15.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork16.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork16.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork17.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork17.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork18.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork18.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork19.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork19.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork20.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork20.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork21.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork21.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork22.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork22.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork23.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork23.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork24.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork24.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork25.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork25.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork26.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork26.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork27.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork27.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork28.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork28.png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork29png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork29png" alt="" width="800">
 
-<img src="/assets/img/DL_NeuralNetwork/dl_neauralnetwork30.png" alt="" width="800">
+<img src="../../assets/img/DL_NeuralNetwork/dl_neuralnetwork30.png" alt="" width="800">
 
 
