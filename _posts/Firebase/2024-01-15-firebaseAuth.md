@@ -11,13 +11,13 @@ tags: [flutter]
 우선, MVVM 아키텍쳐 기반 코드이고, 다음은 '로그인' 및 '회원가입'을 위한 비즈니스 로직을 설계한 각각의 ViewModel이다.
 
 ### LoginViewModel
-<img src="../../assets/img/Flutter/LoginViewModel.png" width="500" height="450">
+<img src="../../assets/img/Flutter/LoginViewModel.png" alt="" width="500" height="450">
 
 <br>
 
 
 ### SignUpViewModel
-<img src="../../assets/img/Flutter/SignUpViewModel.png" width="430" height="450">
+<img src="../../assets/img/Flutter/SignUpViewModel.png" alt=""width="430" height="450">
 
 <br>
 <br>
@@ -25,7 +25,7 @@ tags: [flutter]
 회원가입 과정에서 유저가 `textfield`에 입력하는 자신의 이메일(계정)을 담기 위한 `String`타입의 `_email`이라는 변수를 다음과 같이 선언하고, 그 값을 담기 위한 로직을 `InitState`에 정의했다.
 
 ### EmailScreen InitState
-<img src="../../assets/img/Flutter/emailScreen_initState.png" width="500" height="250">
+<img src="../../assets/img/Flutter/emailScreen_initState.png" alt=""width="500" height="250">
 
 <br>
 
@@ -34,14 +34,14 @@ tags: [flutter]
 <br>
 
 ### EmailScreen Next버튼 콜백함수 '_onSubmit()'
-<img src="../../assets/img/Flutter/emailScreen.png" width="500" height="80">
+<img src="../../assets/img/Flutter/emailScreen.png" alt=""width="500" height="80">
 
 유저가 작성을 마치고 'Next' 버튼을 누르면, `onTap`콜백을 통해 `_onSubmit`함수가 실행되고, `ref.read(signUpForm.notifier).state`으로`SignUpViewModel`아래 정의한 `StateProvider`(상태 저장 및 관리 가능)인 `signUpForm`에 `Map`형식으로 위와 같이 저장된다.
 
 <br>
 
 ### PasswordScreen Next버튼 콜백함수 '_onSubmit()'
-<img src="../../assets/img/Flutter/password_Screen.png" width="500" height="200">
+<img src="../../assets/img/Flutter/password_Screen.png" alt=""width="500" height="200">
 
 password도 같은 로직이다. 하지만 여기서 주의해야 할 것이있다. 상태를 갱신하기 위해 `ref.read(signUpForm.notifier).state = {"password": _password};`으로 작성하면, 기존의 `email`키와 그 값이 완전히 대체된다. 
 
@@ -50,7 +50,7 @@ password도 같은 로직이다. 하지만 여기서 주의해야 할 것이있�
 <br>
 
 ### BirthdayScreen의 콜백함수_onNextTap()
-<img src="../../assets/img/Flutter/birthday_screen.png" width="500" height="100">
+<img src="../../assets/img/Flutter/birthday_screen.png" alt=""width="500" height="100">
 
 이 역시, 'Next' 버튼의 콜백함수인 `_onSubmit`으로 `email`,`password`키와 각각의 값을 담은 `signUpForm`이 완성된다.
 
@@ -59,7 +59,7 @@ password도 같은 로직이다. 하지만 여기서 주의해야 할 것이있�
 그 다음인 '생년월일 설정' 화면에서 'Next'버튼을 누르면 `ref.read(signUpProvider.notifier).signUp(context);`코드가 실행된다. 이를 통해 `SignUpViewModel`의 인스턴스인 `signUpProvider`의 `signUp`메서드가 호출된다.
 
 ### SignUpViewModel.signUp()
-<img src="../../assets/img/Flutter/SignUpViewModel_signUp.png" width="500" height="350">
+<img src="../../assets/img/Flutter/SignUpViewModel_signUp.png" alt=""width="500" height="350">
 
 여기서, `state`는 `AsyncNotifier`의 내부 속성으로, 비동기 작업 상태를 관리(저장/변경)하며, `AsyncNotifier`의 메서드인 `AsyncValue`를 통해 상태를 관리한다. 
 
@@ -67,14 +67,14 @@ password도 같은 로직이다. 하지만 여기서 주의해야 할 것이있�
 
 
 ### AuthenticationRepository
-<img src="../../assets/img/Flutter/authRepo.png" width="500" height="550">
+<img src="../../assets/img/Flutter/authRepo.png" alt=""width="500" height="550">
 
 <br>
 그러면 다음과 같이 Firebase Console에 계정이 등록된 것을 확인 할 수 있다.
 <br>
 
 ### Firebase Console
-<img src="../../assets/img/Flutter/firebase/FirebaseConsole_addedEmail.png" width="500" height="400">
+<img src="../../assets/img/Flutter/firebase/FirebaseConsole_addedEmail.png" alt=""width="500" height="400">
 
 
 
@@ -92,55 +92,55 @@ password도 같은 로직이다. 하지만 여기서 주의해야 할 것이있�
 <br>
 
 ### Firebase Console/Authentication
-<img src="../../assets/img/firebase_auth/social_auth_github1.png" width="700" height="200">
+<img src="../../assets/img/firebase_auth/social_auth_github1.png" alt=""width="700" height="200">
 
 ### *소셜인증 플랫폼 선택을 위해 'Authentication'탭의 'Sign-in method'에서 'Add new provider'를 누른다.*
 
 <br>
 
 ### Firebase Console/Authentication
-<img src="../../assets/img/firebase_auth/social_auth_github2.png" width="700" height="350">
+<img src="../../assets/img/firebase_auth/social_auth_github2.png" alt=""width="700" height="350">
 
 ### *현재 시점에선 위처럼 Native를 제외한 9개의 소셜 provider를 기본으로 제공하고있다.*
 
 <br>
 
 ### Firebase Console/Authentication
-<img src="../../assets/img/firebase_auth/social_auth_github6-1.png" width="700" height="500">
+<img src="../../assets/img/firebase_auth/social_auth_github6-1.png" alt=""width="700" height="500">
 
 ### *우측 상단에 'Enable'를 누르고, 'authorization call back URL'을 복사한다.*
 
 <br>
 
 ### Github
-<img src="../../assets/img/firebase_auth/social_auth_github3.png" width="700" height="85">
+<img src="../../assets/img/firebase_auth/social_auth_github3.png" alt=""width="700" height="85">
 
 ### *Github 'Setting' > Developer Setting탭 선택 > OAuth Apps탭 선택 > 'New OAuth App'클릭*
 
 <br>
 
 ### Github
-<img src="../../assets/img/firebase_auth/social_auth_github4.png" width="700" height="730">
+<img src="../../assets/img/firebase_auth/social_auth_github4.png" alt=""width="700" height="730">
 
 ### *앱 이름과 주소를 설정하고, 'Authorization callback URL'에 복사한 URL을 붙혀넣기한 후, 'Register application'을 누른다.*
 
 <br>
 
 ### Github
-<img src="../../assets/img/firebase_auth/social_auth_github5.png" width="700" height="600">
+<img src="../../assets/img/firebase_auth/social_auth_github5.png" alt=""width="700" height="600">
 
 ### *'Client ID'가 표시되고, 'Generate new client secret'를 누르면 'Client secret'이 생성된다.*
 
 <br>
 
 ### Firebase Console/Authentication
-<img src="../../assets/img/firebase_auth/social_auth_github6.png" width="700" height="500">
+<img src="../../assets/img/firebase_auth/social_auth_github6.png" alt=""width="700" height="500">
 
 ### *생성된 'Client ID'와 'Client secret'을 Firebase Console로 돌아와 붙혀넣는다.*
 
 <br>
 
-<img src="../../assets/img/firebase_auth/social_auth_github7.png" width="700" height="200">
+<img src="../../assets/img/firebase_auth/social_auth_github7.png" alt=""width="700" height="200">
 
 ### *위 과정을 거치면, 'GitHub provider'가 생성된 것을 볼 수 있다.*
 
@@ -154,7 +154,7 @@ password도 같은 로직이다. 하지만 여기서 주의해야 할 것이있�
 <br>
 
 ## Android
-<img src="../../assets/img/firebase_auth/social_auth_github8.png" width="700" height="400">
+<img src="../../assets/img/firebase_auth/social_auth_github8.png" alt=""width="700" height="400">
 
 <br>
 
@@ -178,7 +178,7 @@ dependencies {
 
 ### Firebase Console/Authentication
 
-<img src="../../assets/img/firebase_auth/social_auth_github9.png" width="700" height="500">
+<img src="../../assets/img/firebase_auth/social_auth_github9.png" alt=""width="700" height="500">
 
 ### *마지막으로, SHA-1 키 등록을 진행한다. (debug, release 버전이 있기 때문에, 앱 배포 시, release 버전의 SHA-1 key가 등록이 되지 않으면 소셜인증을 사용할 수 없음)*
 
@@ -186,7 +186,7 @@ dependencies {
 
 
 ## iOS
-<img src="../../assets/img/firebase_auth/social_auth_github8-1.png" width="700" height="400">
+<img src="../../assets/img/firebase_auth/social_auth_github8-1.png" alt=""width="700" height="400">
 
 ### *iOS는 xCode에서 'Target'섹션 > 'Info' 탭 > 'URL Type'을 확장한 후, + 버튼으로 Firebase에서 가져온 'App ID'를 붙혀넣기만 해주면 된다.*
 
@@ -194,7 +194,7 @@ dependencies {
 
 ### Firebase Console/Authentication
 
-<img src="../../assets/img/firebase_auth/social_auth_github10.png" width="700" height="200">
+<img src="../../assets/img/firebase_auth/social_auth_github10.png" alt=""width="700" height="200">
 
 ### *앱 내에서 회원가입을 진행하고, Firebase Console/Authentication/Users를 확인해보면 다음과 같이 깃허브계정으로 회원가입이 정상적으로 된 것을 확인 할 수 있다.*
 <br>
