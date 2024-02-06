@@ -29,7 +29,7 @@ github:
   username: NoirFreedom # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: NoirFreedom_x_x # change to your twitter username
 
 social:
   # Change to your full name.
@@ -113,7 +113,7 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
-paginate: 10
+paginate: 5
 
 # The base URL of your site
 baseurl: ""
