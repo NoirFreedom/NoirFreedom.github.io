@@ -22,7 +22,7 @@ tags: [python]
 2. 그 내부 함수가 외부 함수의 변수를 참조할 것
 3. 외부 함수가 내부 함수를 리턴할 것
 
-
+<img src="/assets/img/Python/python_closure1.png" alt="" width="600" >
 
 
 
