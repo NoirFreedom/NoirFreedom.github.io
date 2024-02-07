@@ -10,7 +10,7 @@ tags: [flutter, personal projects, errors, problem solving]
 
 *"Firebase Auth를 구현하고, 앱 내, 회원가입에서 요구되는 정보를 입력 후, 등록 버튼을 누르면 다음과 같은 오류가 발생했다."*
 
-<img src="../../../assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe1.png">
+<img src="/assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe1.png">
 
 *"Flutter에서 위젯이 비활성화된 상태(deactivated state)에서 위젯 트리의 상위 위젯(ancestor)에 접근하려 할 때 오류가 발생했다는 것이다. 즉, 위젯이 위젯 트리에서 제거된 후, 해당 위젯의 BuildContext를 사용하여 상위 위젯에 접근하려하여 오류가 났다는 것."*
 
@@ -41,16 +41,16 @@ if (state.hasError) {
 
 
 ### 기존의 SignUpViewModel
-<img src="../../../assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe2.png">
+<img src="/assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe2.png">
 
 ### 수정된 SignUpViewModel
-<img src="../../../assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe3.png">
+<img src="/assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe3.png">
 
 ---
 
 ### 기존의 BirthdayScreen `_onNextTap`메소드
-<img src="../../../assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe4.png">
+<img src="/assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe4.png">
 
 ### 수정된 BirthdayScreen `_onNextTap`메소드
-<img src="../../../assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe5.png">
+<img src="/assets/img/Errors/TikTokMock/AncestorUnsafe/AncestorUnsafe5.png">
 
