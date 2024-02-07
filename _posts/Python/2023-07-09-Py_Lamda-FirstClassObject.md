@@ -19,11 +19,11 @@ tags: [python]
 (lambda 매개변수 : 리턴값)(인수)
 ````
 
-<img src="/assets/img/Python/python_firstclassObject1.png" alt="" width="600" >
+<img src="/assets/img/Python/Lamda-FirstClassObject/python_firstclassObject1.png" alt="" width="600">
 
-<img src="/assets/img/Python/python_firstclassObject2.png" alt="" width="600" >
+<img src="/assets/img/Python/Lamda-FirstClassObject/python_firstclassObject2.png" alt="" width="600">
 
-<img src="/assets/img/Python/python_firstclassObject3.png" alt="" width="600" >
+<img src="/assets/img/Python/Lamda-FirstClassObject/python_firstclassObject3.png" alt="" width="600">
 
 
 - 람다 함수는 익명의 함수를 만들기 때문에, 함수를 생성한 이후에 다시 이 함수를 호출하려면 람다 표현식을 변수에 할당해주어야 한다.

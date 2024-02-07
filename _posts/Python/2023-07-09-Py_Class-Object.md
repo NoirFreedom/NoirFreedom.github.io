@@ -17,7 +17,7 @@ tags: [python]
 > 클래스(Class)는 무엇을 계속 만들어 내는 틀에 비유됨.
 > 그 이유는 클래스는 객체(Object) 를 정의하고 만들기 위한 변수와 메서드의 집합이기 때문입니다.
 
-<img src="/assets/img/Python/python_class_object1.png" alt="" width="600" >
+<img src="/assets/img/Python/Class-Object/python_class_object1.png" alt="" width="600" >
 
 
 ```
@@ -48,12 +48,12 @@ class Aiffel:
 ```
 
 
-<img src="/assets/img/Python/python_class_object2.png" alt="" width="600" >
+<img src="/assets/img/Python/Class-Object/python_class_object2.png" alt="" width="600" >
 
 
 
 
-<img src="/assets/img/Python/python_class_object3.png" alt="" width="600" >
+<img src="/assets/img/Python/Class-Object/python_class_object3.png" alt="" width="600" >
 
 
 

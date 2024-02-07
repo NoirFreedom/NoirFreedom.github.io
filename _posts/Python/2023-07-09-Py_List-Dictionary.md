@@ -24,7 +24,7 @@ list_o = ['a','b','c','d','e','f'] # 한 줄로 늘어선 리스트
 list_tw = [[1, 2], ['ㄱ', 'ㄴ'], ['a', 'b']] # 아래 이미지와 같이 상상해 볼 수 있다
 ```
 
-<img src="/assets/img/Python/python_list_dictionary1.png" alt="" width="600" >
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary1.png" alt="" width="600" >
 
 #### 3차원 리스트
 ```python
@@ -34,8 +34,7 @@ list_th = [[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]],\
 ```
 ##### 📍 depth의 길이는 len()으로 확인가능
 
-<img src="/assets/img/Python/python_list_dictionary2.png" alt="" width="600" >
-
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary2.png" alt="" width="600" >
 ---
 
 ## Dictionary
@@ -71,15 +70,15 @@ ___
 
 🔶 반복문과 컴프리헨션
 
-<img src="/assets/img/Python/python_list_dictionary3.png" alt="" width="600" >
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary3.png" alt="" width="600" >
 
     반복문으로 리스트를 만들 때는 리스트명에 비어있는 리스트를 먼저 할당해야 한다. 반면 컴프리헨션으로 리스트를 만들 때는 가장 바깥에 대괄호 [ ]만 써주면 됨.
 
-<img src="/assets/img/Python/python_list_dictionary4.png" alt="" width="600" >
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary4.png" alt="" width="600" >
 
     반복문은 평소대로 쓰면 되지만 리스트 컴프리헨션은 대괄호 안에 씁니다.
 
-<img src="/assets/img/Python/python_list_dictionary5.png" alt="" width="600" >
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary5.png" alt="" width="600" >
 
     반복문에서는 콜론(:) 다음 들여쓰기 후에 append() 함수와 그 안에 변수를 썼지만, 컴프리헨션에서는 반복문 앞에 변수만 쓰면된다.
 
@@ -87,13 +86,13 @@ ___
 
 🔶 반복문 + 조건문 컴프리헨션
 
-<img src="/assets/img/Python/python_list_dictionary6.png" alt="" width="600" >
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary6.png" alt="" width="600" >
 
 ```
 반복문에서는 반복문 콜론(:) 뒤에 조건문을 쓰고, 컴프리헨션에서는 for문 뒤에 조건문이 온다.
 ```
 
-<img src="/assets/img/Python/python_list_dictionary7.png" alt="" width="600" >
+<img src="/assets/img/Python/List-Dictionary/python_list_dictionary7.png" alt="" width="600" >
 
 ```
 변수의 위치도 반복문에서와 동일
