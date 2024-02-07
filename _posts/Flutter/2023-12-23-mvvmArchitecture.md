@@ -21,7 +21,7 @@ tags: [flutter]
 이 아키텍처는 UI와 비즈니스 로직의 엄격한 분리를 통해 코드의 재사용성, 테스트의 용이성, 유지보수의 효율성을 증진한다.
 
 
-<img src="/assets/img/Flutter/mvvm_repository1.png" alt="" width="250" height="280">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_repository1.png" alt="" width="250" height="280">
 
 
 <br>
@@ -36,7 +36,7 @@ tags: [flutter]
 
 > Repository 패턴은 데이터 처리 로직의 일관성을 보장하고, 코드의 재사용성을 높이며, 애플리케이션의 테스트와 유지보수를 용이하게 한다. 데이터 캐싱, 동기화, 트랜잭션 관리와 같은 복잡한 데이터 관리 작업도 중앙에서 효율적으로 처리할 수 있다.
 
-<img src="/assets/img/Flutter/repositoryImg.jpeg" alt="" width="500" height="310">
+<img src="/assets/img/Flutter/MVVMarchitecture/repositoryImg.jpeg" alt="" width="500" height="310">
 
 <br>
 
@@ -102,7 +102,7 @@ tags: [flutter]
 
 ### main() 함수 설정
 
-<img src="/assets/img/Flutter/mvvm_main_setting.png" alt="" width="500" height="350">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_main_setting.png" alt="" width="500" height="350">
 
 *`await`를 사용하기 위해 `WidgetsFlutterBinding.ensureInitialized()`로 Flutter의 엔진과 위젯 바인딩을 초기화한다. 
 
@@ -148,8 +148,8 @@ tags: [flutter]
 
 'SocicalNetwork' App 개발 중, 우측 이미지 Settings 화면에서 'Mute video' 토글 설정에 따라 왼쪽 화면 VideoPost에도 적용되어 아이콘이 이에따라 변하도록 구현했다. 설정값을 저장하기 위해 SharePreferences를 사용하였고, 'Hot reload', 또는 앱을 재시작해도 해당 값이 그대로 유지 될것 이라고 생각했다.
 
-<img src="/assets/img/Flutter/mvvm_problem_1.1.png" alt="" width="400" height="190">
-<img src="/assets/img/Flutter/mvvm_problem_1.2.png" alt="" width="400" height="190">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_problem_1.1.png" alt="" width="400" height="190">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_problem_1.2.png" alt="" width="400" height="190">
 
 하지만 한가지 오류가 발생했다. 'Hot reload', 또는 앱을 재시작해도 해당 설정값은 유지되었고, VideoPost화면에서 아이콘 역시 이 설정값에 따라 의도한대로 변하였지만, VideoPost화면으로 이동하고 영상이 재생될 때, 'Mute video' 상태임에도 소리가 나오는 문제가 있었다.
 
@@ -157,19 +157,19 @@ tags: [flutter]
 
 
 ### ViewModel
-<img src="/assets/img/Flutter/mvvm_problem_1.3.png" alt="" width="400" height="300">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_problem_1.3.png" alt="" width="400" height="300">
 
 
 ### Repository
 
-<img src="/assets/img/Flutter/mvvm_problem_1.4.png" alt="" width="400" height="300">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_problem_1.4.png" alt="" width="400" height="300">
 
 그렇다면 왜 앱을 재시작 했을 경우에 문제가 생기는 것인가에 대해 생각해보았고, 우선 VideoPost화면의 초기화 단계에서 Volume값이 어떻게 설정되고 있는지 출력해 보았다.
 
 Setting화면의 'Mute video'설정이 켜져있다면, 이 Volume은 원래 "0.0"으로 출력되어야 하나, 아래 이미지에서처럼 설정값에 관계없이 "1.0"으로 출력되고 있었다.
 
 
-<img src="/assets/img/Flutter/mvvm_problem_1.5.png" alt="" width="400" height="300">
+<img src="/assets/img/Flutter/MVVMarchitecture/mvvm_problem_1.5.png" alt="" width="400" height="300">
 
 그렇다면 왜 ViewModel의 값이 전달되지 않는가에 대해 생각해보며 아래 코드를 확인해보았다.
 
