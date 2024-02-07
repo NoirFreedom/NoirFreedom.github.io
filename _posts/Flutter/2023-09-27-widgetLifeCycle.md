@@ -29,7 +29,7 @@ Flutter로 프로그래밍을 하면서, 코드의 복잡성 증가와 데이터
 
 Flutter에서는 `StatefulWidget`과 `StatelessWidget`의 라이프사이클에 주목하여, 각 위젯이 어떻게 생성되고, 업데이트되며, 소멸하는지를 파악하는 것이 중요하기때문에, 위젯 라이프사이클을 이해하고 적절히 활용하면, 효율적이고 사용자 친화적인 앱을 개발할 수 있다.
 
-<img src="/assets/img/Flutter/widget_lifecycle2.png" alt="" width="400" height="600">
+<img src="/assets/img/Flutter/WidgetLifeCycle/widget_lifecycle2.png" alt="" width="400" height="600">
 
 
 <br>
