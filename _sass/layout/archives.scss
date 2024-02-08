@@ -38,7 +38,7 @@
     }
 
     /* Year dot */
-    &::after {
+    /* &::after {
       content: '';
       display: inline-block;
       position: relative;
@@ -51,7 +51,7 @@
       border-color: var(--timeline-node-bg);
       box-shadow: 0 0 2px 0 #c2c6cc;
       z-index: 1;
-    }
+    } */
   }
 
   ul {
