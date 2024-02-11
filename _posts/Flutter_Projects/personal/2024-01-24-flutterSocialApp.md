@@ -8,12 +8,12 @@ tags: [projects]
 
 *"기존의 유저 프로필 화면에서 프로필 수정 기능을 riverpod을 사용하여 수정된 데이터를 Firebase 데이터베이스에 반영하고, 업데이트하여 상태관리를 보다 효율적으로 개선하고자하였다."*
 
-<img src="../../../assets/img/Flutter_Projects/personal/socialAppMock/profile_edit_1.png" alt="" width="300">
+<img src="/assets/img/Flutter_Projects/personal/socialAppMock/profile_edit_1.png" alt="" width="300">
 
 
 *"우선, 이 프로젝에선 MVVM architecture 패턴을 따르고, 다음과 같이 'View'에 해당하는 UI를 구성해보았다."*
 
-<img src="../../../assets/img/Flutter_Projects/personal/socialAppMock/profile_edit_2.png" alt="" width="300">
+<img src="/assets/img/Flutter_Projects/personal/socialAppMock/profile_edit_2.png" alt="" width="300">
 
 *"기존 데이터 구조에서 email, uid, bithday와 같은 정보들은 회원가입 절차에서 제공받기 때문에, `copywith`메서드를 정의함으로써, 기존 데이터의 불변성은 유지하면서 원하는 필드의 값을 업데이트 할 수 있도록 해야했다."*
 
@@ -129,8 +129,8 @@ final linkProvider = StateProvider<String>((ref) => '');
 ```
 *"위처럼 각 필드에 해당하는 StateProvider를 정의함으로써, View에서 유저가 textfield에 입력한 값을 앱 전체에 적용할 수 있게되고, 수정이 완료된 상태는 다음과 같고,"*
 
-<img src="../../../assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_update_1.png" alt="" width="300">
-<img src="../../../assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_update_2.png" alt="" width="300">
+<img src="/assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_update_1.png" alt="" width="300">
+<img src="/assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_update_2.png" alt="" width="300">
 
 ### *"Firebase 데이터 베이스에도 잘 적용된 것을 볼 수 있다."*
-<img src="../../../assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_firebase.png" alt="" width="800">
+<img src="/assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_firebase.png" alt="" width="800">
