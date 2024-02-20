@@ -3,7 +3,7 @@ layout: post
 title: "[Flutter] 프로필 수정 기능 구현(Riverpod & Firebase 데이터 연동)"
 date: 2024-01-24
 categories: [Flutter_Projects]
-tags: [projects]
+tags: [flutter, firebase, projects]
 ---
 
 *"기존의 유저 프로필 화면에서 프로필 수정 기능을 riverpod을 사용하여 수정된 데이터를 Firebase 데이터베이스에 반영하고, 업데이트하여 상태관리를 보다 효율적으로 개선하고자하였다."*
