@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Flutter Project] 'Social App 프로필 수정 기능 구현하기 + Riverpod & Firebase 데이터 연동)"
+title: "[Flutter] 프로필 수정 기능 구현(Riverpod & Firebase 데이터 연동)"
 date: 2024-01-24
 categories: [Flutter_Projects]
 tags: [projects]
@@ -127,10 +127,10 @@ final bioProvider = StateProvider<String>((ref) => '');
 final linkProvider = StateProvider<String>((ref) => '');
 
 ```
-*"위처럼 각 필드에 해당하는 StateProvider를 정의함으로써, View에서 유저가 textfield에 입력한 값을 앱 전체에 적용할 수 있게되고, 수정이 완료된 상태는 다음과 같고,"*
+*"위처럼 각 필드에 해당하는 StateProvider를 정의함으로써, View에서 유저가 textfield에 입력한 값을 앱 전체에 적용할 수 있게되고, 수정이 완료된 상태는 다음과 같다."*
 
 <img src="/assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_update_1.png" alt="" width="300">
 <img src="/assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_update_2.png" alt="" width="300">
 
-### *"Firebase 데이터 베이스에도 잘 적용된 것을 볼 수 있다."*
+### *"그 결과로, Firebase 데이터 베이스에도 잘 적용된 것을 볼 수 있다."*
 <img src="/assets/img/Flutter_Projects/personal/socialAppMock/UserProfile_firebase.png" alt="" width="800">
