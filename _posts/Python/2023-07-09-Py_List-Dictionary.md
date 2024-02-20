@@ -74,15 +74,15 @@ update() # 특정 key-value 조합을 삽입
 
 <img src="/assets/img/Python/List-Dictionary/python_list_dictionary3.png" alt="" width="600" >
 
-    반복문으로 리스트를 만들 때는 리스트명에 비어있는 리스트를 먼저 할당해야 한다. 반면 컴프리헨션으로 리스트를 만들 때는 가장 바깥에 대괄호 [ ]만 써주면 된다.
+반복문으로 리스트를 만들 때는 리스트명에 비어있는 리스트를 먼저 할당해야 한다. 반면 컴프리헨션으로 리스트를 만들 때는 가장 바깥에 대괄호 [ ]만 써주면 된다.
 
 <img src="/assets/img/Python/List-Dictionary/python_list_dictionary4.png" alt="" width="600" >
 
-    반복문은 평소대로 쓰면 되지만 리스트 컴프리헨션은 대괄호 안에 쓴다.
+반복문은 평소대로 쓰면 되지만 리스트 컴프리헨션은 대괄호 안에 쓴다.
 
 <img src="/assets/img/Python/List-Dictionary/python_list_dictionary5.png" alt="" width="600" >
 
-    반복문에서는 콜론(:) 다음 들여쓰기 후에 append() 함수와 그 안에 변수를 썼지만, 컴프리헨션에서는 반복문 앞에 변수만 쓰면된다.
+반복문에서는 콜론(:) 다음 들여쓰기 후에 append() 함수와 그 안에 변수를 썼지만, 컴프리헨션에서는 반복문 앞에 변수만 쓰면된다.
 
 
 
@@ -90,15 +90,12 @@ update() # 특정 key-value 조합을 삽입
 
 <img src="/assets/img/Python/List-Dictionary/python_list_dictionary6.png" alt="" width="600" >
 
-```
 반복문에서는 반복문 콜론(:) 뒤에 조건문을 쓰고, 컴프리헨션에서는 for문 뒤에 조건문이 온다.
-```
 
 <img src="/assets/img/Python/List-Dictionary/python_list_dictionary7.png" alt="" width="600" >
 
-```
 변수의 위치도 반복문에서와 동일하다
-```
+
 
 
 
