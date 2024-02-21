@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Dart] Basics 개념 정리"
+title: "[Dart] Basics 개념정리"
 date: 2023-08-21
 categories: [Dart]
 tags: [dart]
