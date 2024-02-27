@@ -10,7 +10,7 @@ tags: [flutter, riverpod]
 *'좋아요' 기능 구현과정에서 왜 FamilyAsyncNotifier가 사용됐는지 회고해보려한다. 먼저, 비즈니스 로직, 데이터 액세스 로직은 간략하게는 다음과 같다.*
 
 ### VideoPost
-<img src="../../assets/img/Flutter/riverpod/SocialApp/videoPost_likeTapped.png" alt="" width=500>
+<img src="/assets/img/Flutter/riverpod/SocialApp/videoPost_likeTapped.png" alt="" width=500>
 
 *좋아요가 눌렀을 때, `_onLikeTaped`함수가 실행되며, `videoPostProvider(widget.videoData.id).notifier`로 상태관리 객체에 접근하여 `.likeVideo()`를 실행한다.*
 
@@ -18,14 +18,14 @@ tags: [flutter, riverpod]
 
 
 ### VideoPostViewModel
-<img src="../../assets/img/Flutter/riverpod/SocialApp/likeVideo_vm.png" alt="" width=500>
+<img src="/assets/img/Flutter/riverpod/SocialApp/likeVideo_vm.png" alt="" width=500>
 
 *Firestore의 유저 정보를 참조하여, `_videoRepository = ref.read(videoRepo)`를 통해 주입받은 레포지토리로 테이터 액세스 로직 `.likeVideo(_videoId, user!.uid)`을 수행한다.*
 
 <br>
 
 ### VideoRepository
-<img src="../../assets/img/Flutter/riverpod/SocialApp/likeVideo_model.png" alt="" width=500>
+<img src="/assets/img/Flutter/riverpod/SocialApp/likeVideo_model.png" alt="" width=500>
 
 *이를 통해, Firestore Database에 'likes' 콜렉션에 'userId'와 'videoId'를 갖는 도큐먼트가 생성된다.참고로, 'videoId'는 VideoModel의 데이터 구조 'id'로 추가하였고, 위 `.add()`메서드를 통해 Firestore에서 고유 'videoId'를 할당 받는다. 이를 통해, 사용자가 '좋아요'를 누를 때, 해당 사용자의 식별 정보(uid)를 서버로 전송하여, 어떤 사용자가 어떤 비디오에 '좋아요'를 했는지 기록할 수 있다.*
 
@@ -115,7 +115,7 @@ build함수를 통해 매개변수로 전달받은 비디오 고유 아이티를
 <br>
 
 ### Firestore Database
-<img src="../../assets/img/Flutter/riverpod/SocialApp/firestore_likes.png" alt="" width=800>
+<img src="/assets/img/Flutter/riverpod/SocialApp/firestore_likes.png" alt="" width=800>
 
 <br>
 
