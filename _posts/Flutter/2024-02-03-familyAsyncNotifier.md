@@ -44,29 +44,48 @@ tags: [flutter, riverpod]
 import 'dart:async';
 
 import 'package:TikTok/features/authentication/repos/authentication_repo.dart';
+import 'package:TikTok/features/videos/models/%08video_post_state_model.dart';
 import 'package:TikTok/features/videos/repos/videos_repo.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class VideoPostViewModel extends FamilyAsyncNotifier<void, String> {
+class VideoPostViewModel extends FamilyAsyncNotifier<VideoPostStatus, String> {
   late final VideoRepository _videoRepository;
   late final _videoId;
 
   @override
-  FutureOr<void> build(String videoId) {
-    _videoId = videoId;
-    _videoRepository = ref.read(videoRepo); // 의존성 주입(VideoRepository 인스턴스 직접 주입)
+  FutureOr<VideoPostStatus> build(String args) async {
+    _videoId = args;
+    _videoRepository = ref.read(videoRepo);
+    final user = ref.read(authRepo).user;
+    final isLiked = await ref.read(videoRepo).isLikedVideo(_videoId, user!.uid);
+    final likesCount = await ref.read(videoRepo).fetchLikesCount(_videoId);
+    print("isLiked: $isLiked");
+    print("likesCount: $likesCount");
+
+    state = AsyncValue.data(
+        VideoPostStatus(isLiked: isLiked, likesCount: likesCount));
+    return state.value!;
   }
 
-  Future<void> likeVideo() async {
-    final user = ref.read(authRepo).user; // 의존성 주입(객체로부터 특정 값을 추출하여 사용)
-    await _videoRepository.likeVideo(_videoId, user!.uid);
+  Future<void> toggleLikeVideo() async {
+    final user = ref.read(authRepo).user;
+    await _videoRepository.toggleLikeVideo(_videoId, user!.uid);
+    state = AsyncValue.data(
+      VideoPostStatus(
+        isLiked: !state.value!.isLiked, // 현재 상태의 반대로 설정
+        likesCount: state.value!.isLiked
+            ? state.value!.likesCount - 1
+            : state.value!.likesCount + 1, // 좋아요 상태에 따라 수 조정
+      ),
+    );
   }
 }
 
 final videoPostProvider =
-    AsyncNotifierProvider.family<VideoPostViewModel, void, String>(
+    AsyncNotifierProvider.family<VideoPostViewModel, VideoPostStatus, String>(
   () => VideoPostViewModel(),
 );
+
 ```
 
 
@@ -90,9 +109,18 @@ class VideoPostViewModel extends FamilyAsyncNotifier<void, String>
 
 ```dart
   @override
-  FutureOr<void> build(String videoId) {
-    _videoId = videoId;
-    _videoRepository = ref.read(videoRepo); // 의존성 주입(VideoRepository 인스턴스 직접 주입)
+  FutureOr<VideoPostStatus> build(String args) async {
+    _videoId = args;
+    _videoRepository = ref.read(videoRepo);
+    final user = ref.read(authRepo).user;
+    final isLiked = await ref.read(videoRepo).isLikedVideo(_videoId, user!.uid);
+    final likesCount = await ref.read(videoRepo).fetchLikesCount(_videoId);
+    print("isLiked: $isLiked");
+    print("likesCount: $likesCount");
+
+    state = AsyncValue.data(
+        VideoPostStatus(isLiked: isLiked, likesCount: likesCount));
+    return state.value!;
   }
 ```
 > #### 의존성 주입 한번 더 집고 넘어가기
@@ -103,13 +131,21 @@ class VideoPostViewModel extends FamilyAsyncNotifier<void, String>
 build함수를 통해 매개변수로 전달받은 비디오 고유 아이티를 `_videoId`에 할당하고, 데이터 접근을 위해 의존성을 주입한다.
 
 ```dart
-  Future<void> likeVideo() async {
+  Future<void> toggleLikeVideo() async {
     final user = ref.read(authRepo).user;
-    await _videoRepository.likeVideo(_videoId, user!.uid);
+    await _videoRepository.toggleLikeVideo(_videoId, user!.uid);
+    state = AsyncValue.data(
+      VideoPostStatus(
+        isLiked: !state.value!.isLiked, // 현재 상태의 반대로 설정
+        likesCount: state.value!.isLiked
+            ? state.value!.likesCount - 1
+            : state.value!.likesCount + 1, // 좋아요 상태에 따라 수 조정
+      ),
+    );
   }
 ```
 
-`ref.read(authRepo).user`로 현재 사용자의 정보를 가져오며, VideoRepository 인스턴스의 `.likeVideo()`를 사용하여, '좋아요'기능을 적용하면, 다음과 같이 Firestore 데이터베이스에 'likes' 콜렉션과 해당 정보들이 생성된다.
+`ref.read(authRepo).user`로 현재 사용자의 정보를 가져오며, VideoRepository 인스턴스의 `.toggleLikeVideo()`를 사용하여, '좋아요'기능을 적용하면, 다음과 같이 Firestore 데이터베이스에 'likes' 콜렉션과 해당 정보들이 생성된다.
 
 <br>
 <br>
