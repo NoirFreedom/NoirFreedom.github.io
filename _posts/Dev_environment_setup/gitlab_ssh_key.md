@@ -77,3 +77,11 @@ Host gitlab.com
 ```bash
 git clone git@gitlab.com:exflyer/mayo-web-dms.git
 ```
+
+**문제 해결:**
+
+만약 여전히 문제가 발생한다면, 다음 사항들을 확인해보세요:
+
+* SSH 키가 올바르게 추가되었는지.
+* SSH 에이전트가 실행 중인지.
+* GitLab 설정에서 SSH 키가 올바르게 등록되었는지.
