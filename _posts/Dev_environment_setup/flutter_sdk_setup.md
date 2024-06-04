@@ -3,7 +3,7 @@ layout: post
 title: "[개발환경] Flutter SDK Setup"
 date: 2024-06-04
 categories: [Dev_Environment_Setup]
-tags: [dev_environment_setup]
+tags: [dev environment setup]
 ---
 
 ## Homebrew를 사용하여 macOS에 Flutter SDK 설치 및 VS Code 설정하기
