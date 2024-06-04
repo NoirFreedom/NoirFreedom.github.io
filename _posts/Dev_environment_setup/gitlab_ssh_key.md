@@ -3,7 +3,7 @@ layout: post
 title: "[개발환경] GitLab SSH키 등록"
 date: 2024-06-04
 categories: [Dev_Environment_Setup]
-tags: [dev_environment_setup]
+tags: [dev environment setup]
 ---
 
 ## 기존 SSH 키를 새로 생성하고 GitLab에 등록하는 방법
