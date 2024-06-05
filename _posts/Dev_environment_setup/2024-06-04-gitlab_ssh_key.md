@@ -2,7 +2,7 @@
 layout: post
 title: "[개발환경] GitLab SSH키 등록"
 date: 2024-06-04
-categories: [Dev_Environment_Setup]
+categories: [Dev Environment Setup]
 tags: [dev environment setup]
 ---
 

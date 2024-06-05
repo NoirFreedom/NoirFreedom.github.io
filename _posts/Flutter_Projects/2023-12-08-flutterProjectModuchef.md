@@ -3,7 +3,7 @@ layout: post
 title: "[Flutter Project] '모두의 셰프' 회고_1"
 published: false
 date: 2023-12-08
-categories: [Flutter_Projects]
+categories: [Flutter Projects]
 tags: [projects]
 ---
 
