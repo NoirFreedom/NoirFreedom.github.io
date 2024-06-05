@@ -2,7 +2,7 @@
 layout: post
 title: "[Flutter] 프로필 수정 기능 구현(Riverpod & Firebase 데이터 연동)"
 date: 2024-01-24
-categories: [Flutter_Projects]
+categories: [Flutter Projects]
 tags: [flutter, firebase, projects]
 ---
 
