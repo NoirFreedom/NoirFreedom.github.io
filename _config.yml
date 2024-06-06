@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: NoirFreedom's Archive # the main title # the main title
 
-tagline: 더 발전할 제 자신을 상상하고, 그것을 달성하기 위해 꾸준히 나아가고자 합니다. # it will display as the sub-title
+tagline: Why로 성장하는 개발자 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
     NoirFreedom's Code Archive
